@@ -1,0 +1,34 @@
+asyncapi:
+  2.0.0
+
+description: The timestamp of the event.
+  format: date-time
+  type: string
+  timestamp:
+    description: The type of the event.
+    type: string
+  type:
+    description: The ID of the event.
+    type: string
+  id:
+  properties:
+  type: object
+  payload:
+  summary: A logistics event.
+  name: logisticsEvent
+  LogisticsEvent:
+  messages:
+components:
+
+  $ref: '#/components/messages/LogisticsEvent'
+  message:
+  summary: Receive a logistics event.
+  subscribe:
+  logistics.events:
+channels:
+
+  description: API for tracking logistics events.
+  version: 1.0.0
+  title: Logistics Tracker API
+info:
+
